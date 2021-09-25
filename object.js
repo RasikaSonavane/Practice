@@ -9,3 +9,10 @@ console.log(studentDetails.Name);
 console.log(studentDetails.Age);
 console.log(studentDetails.address.Pincode);
 console.log(studentDetails['lastName'])
+
+const data={a:1, b:2};
+for(const details in data){
+    console.log('${details}: ${data[details]}');
+}
+
+for (var key in student){console.log(key)}
