@@ -50,14 +50,60 @@ else{console.log("a is greater than b")}
 console.log(firstName.toUpperCase())
 console.log(lastName.toLowerCase())
 */
-
+ /*   //object creating below studentdetails and all the address, firstnames etc are the properties of the object
 var studentDetails={
     Address:{houseNum:104, society:"shree ganesh", city:"Panvel", country:"India", pinCode: 499855},
    firstName: "Siya",
    lastName: "Dravid",
-   Age: 23,
+   age:23,
    isGraduate:true,
    isMarried:false,
-   mobileNumber: 7045023783
+   mobileNumber: 7045023783,
+   printDetails:function()
+   {
+    console.log(this.firstName)
+    console.log(this.lastName)
+    console.log(this.age)
+    },
+    getemployee : function()
+    {
+        console.log(this.mobileNumber);
+        console.log(this.age);
+    }
 }
+studentDetails.printDetails()
+studentDetails.getemployee()
+*/
+
+   //"this" is the keyword which is used inside the method of the object
+   //getsomedetails is the method inside the object which is function.
+
+//to delete some properties we can use delete keyword
+//delete studentDetails.isMarried
+//for(var allPoperties in studentDetails)
+//{console.log(allPoperties)}
+
+//ways to access the properties in the console
+/*console.log(studentDetails.isGraduate)
+console.log(studentDetails["isMarried"])
+
+console.log(studentDetails.mobileNumber)
+console.log(studentDetails["age"])
+
+//to check specific address property is in particular object or not
+
+if(allPoperties=="mobileNumber")
+{console.log("this is available")}
+else{console.log("this is not available")}
+
+//to add the new property
+studentDetails.nationality="Indian"
+console.log(studentDetails.nationality)
+
+//to get all the properties from the object we can use below syntax
+for(var allPoperties in studentDetails)
+{console.log(allPoperties)}
+*/
+
+
 
